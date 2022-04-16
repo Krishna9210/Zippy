@@ -1,255 +1,412 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-weight: lighter;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: lighter;
 }
-body{
-	font-size: 20px;
-	overflow-x: hidden;
-	font-family: 'Flamenco', cursive;
-	color: #fff;
-	scroll-behavior: smooth;
+body {
+  font-size: 20px;
+  overflow-x: hidden;
+  font-family: "Flamenco", cursive;
+  color: #fff;
+  scroll-behavior: smooth;
+}
 
-}
-header{
-	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/mountain.jpg');
-	background-size:cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 100vh;
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/mountain.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
 }
 
 .clearfix:after {
-	content: ".";
-	visibility: hidden;
-	display: block;
-	height: 0px;
-	clear: both;
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0px;
+  clear: both;
 }
 
 .row {
-	max-width: 1180px;
-	margin: auto;
+  max-width: 1180px;
+  margin: auto;
 }
 
 .main-nav {
-	float: right;
-	margin-top: 60px;
+  float: right;
+  margin-top: 60px;
 }
 .main-nav li {
-	display: inline-block;
-	list-style: none;
-	margin-left: 40px;
+  display: inline-block;
+  list-style: none;
+  margin-left: 40px;
 }
 .main-nav li a:hover {
-	border-bottom: 2px solid #bf55ec;
-
+  border-bottom: 2px solid #bf55ec;
 }
 .main-nav a {
-	padding: 5px 0;
-	color: #fff;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 90%;
-	font-weight: 100;
-
+  padding: 5px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  font-weight: 100;
 }
-.intro-header{
-	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/mountain2.jpg');
-	background-size:cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 100vh;
+.intro-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/mountain2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
 }
-.intro-header .main-content-header{
-	width: 1180px;
-	position: absolute;
-	top: 155%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+.intro-header .main-content-header {
+  width: 1180px;
+  position: absolute;
+  top: 155%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-h1{
-	color: #fff;
-	font-size: 240%;
-	word-spacing: 5px;
-	letter-spacing: 3px;
-	margin-bottom: 20px;
-	text-transform: uppercase;
-	font-weight: lighter;
-
+h1 {
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: lighter;
 }
-.btn{
-	display: inline-block;
-	padding: 10px 30px;
-	font-weight: lighter;
-	text-decoration: none;
-	text-transform: uppercase;
-	border-radius: 200px;
-	transition: background-color 0.2s,border 02s,color 0.2s;
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: lighter;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 02s, color 0.2s;
 }
-.btn-full{
-	background-color: transparent;
-	color: #bf55ec;
-	margin-right: 15px;
-	border: 1px solid #bf55ec;
-
+.btn-full {
+  background-color: transparent;
+  color: #bf55ec;
+  margin-right: 15px;
+  border: 1px solid #bf55ec;
 }
-.btn-full:hover{
-	background-color: #fff;
-	color: black;
-
+.btn-full:hover {
+  background-color: #fff;
+  color: black;
 }
-.btn-nav{
-	background-color: transparent;
-	color: #fff;
-	border: 1px solid #fff;
-
+.btn-nav {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
 }
-.btn-nav:hover{
-	background-color: #bf55ec;
-	color: #fff;
+.btn-nav:hover {
+  background-color: #bf55ec;
+  color: #fff;
 }
-.colorchange{
-	animation: colorchangekk 1s infinite;
+.colorchange {
+  animation: colorchangekk 1s infinite;
 }
-@keyframes colorchangekk{
-	0%{color: red;}
-	25%{color: #bf55ec;}
-	50%{color: #fff;}
-	100%{color: #bf55ec;}
+@keyframes colorchangekk {
+  0% {
+    color: red;
+  }
+  25% {
+    color: #bf55ec;
+  }
+  50% {
+    color: #fff;
+  }
+  100% {
+    color: #bf55ec;
+  }
 }
-.mobile-icon{
-	display: none;
+.mobile-icon {
+  display: none;
 }
-.contact{
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../images/contact-form.jpg');
-	background-size:cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 100vh;
+.contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/contact-form.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
 }
-img{
-	/* margin-right: 150px; */
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	height: 50vh;
+img {
+  /* margin-right: 150px; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
 }
-footer{
-	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/footimg.jpg');
-	background-size:cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 24vh;
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/footimg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 24vh;
 }
-.foot-content{
-	display: flex;
-    word-spacing: 2px;
+.foot-content {
+  display: flex;
+  word-spacing: 2px;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+#copyr {
+  padding-inline: 21px;
+  padding-top: 10px;
+}
+#help {
+  padding-inline: 21px;
+  padding-top: 10px;
+}
+@media (max-width: 318px) {
+  .intro-header .main-content-header {
+    margin: 20px;
+    width: 100px;
+  }
+}
+@media (min-width: 319px) and (max-width: 373px) {
+  body {
+    scroll-behavior: smooth;
+  }
+  .main-nav li {
+    display: block;
     justify-content: center;
-    color: rgb(255, 255, 255);
-
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .main-nav a {
+    padding: 10px;
+  }
+  .intro-header .main-content-header {
+    margin: 20px;
+    width: 250px;
+    font-size: 12px;
+  }
+  .btn-full {
+    font-size: 10px;
+    margin-bottom: 15px;
+  }
+  .btn-nav {
+    font-size: 10px;
+    margin-bottom: 15px;
+  }
+  .animated {
+    padding: 70px 0px 0px 70px;
+    font-size: 25px;
+    max-width: 100px;
+  }
+  .col {
+    justify-content: center;
+    text-align: center;
+  }
+  .col h1 {
+    font-size: 30px;
+  }
+  .btn {
+    padding: 8px;
+    font-size: 12px;
+  }
+  form {
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+  }
+  .foot-content {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+  }
+  #copyr {
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  #help {
+    margin-bottom: 0px;
+    text-align: center;
+  }
 }
-#copyr{
-	padding-inline: 21px;
-    padding-top: 10px;
+
+@media (min-width: 374px) and (max-width: 423px) {
+  body {
+    scroll-behavior: smooth;
+  }
+  .main-nav li {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+  }
+  .main-nav a {
+    padding: 10px;
+  }
+  .intro-header .main-content-header {
+    margin: 10px;
+    width: 250px;
+    font-size: 12px;
+  }
+  .btn-full {
+    font-size: 10px;
+    margin-bottom: 15px;
+    margin-right: 90px;
+  }
+  .btn-nav {
+    font-size: 10px;
+    margin-bottom: 15px;
+    margin-right: 90px;
+  }
+  .col {
+    margin: 20px;
+    text-align: center;
+  }
+  .btn {
+    font-size: 13px;
+    padding: 11px;
+  }
+  .foot-content {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+  }
+  #copyr {
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  #help {
+    margin-bottom: 0px;
+    text-align: center;
+  }
 }
-#help{
-	padding-inline: 21px;
-    padding-top: 10px;
 
+@media (min-width: 424px) and (max-width: 766px) {
+  body {
+    scroll-behavior: smooth;
+  }
+  .main-nav li {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+  }
+  .main-nav a {
+    padding: 10px;
+  }
+  .intro-header .main-content-header {
+    margin: 15px;
+    width: 320px;
+    font-size: 15px;
+  }
+  .btn-full {
+    font-size: 12px;
+    margin-bottom: 15px;
+    margin-right: 90px;
+  }
+  .btn-nav {
+    font-size: 12px;
+    margin-bottom: 15px;
+    margin-right: 90px;
+  }
+  .col {
+    text-align: center;
+  }
+  .card a {
+    margin: 0;
+    padding: 5px;
+    font-size: 10px;
+  }
+  .foot-content {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+  }
+  #copyr {
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  #help {
+    margin-bottom: 0px;
+    text-align: center;
+  }
 }
-@media (max-width: 318px){
-	.intro-header .main-content-header{
-	  margin:20px;
-	  width:100px;
-  
-	}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  body {
+    scroll-behavior: smooth;
   }
-  @media (min-width: 319px) and (max-width: 373px) {
-
-	body { scroll-behavior: smooth; }
-	.main-nav li { display: block; justify-content: center; text-align: center; margin-bottom: 10px; }
-	.main-nav a { padding: 10px; }
-	.intro-header .main-content-header { margin: 20px; width: 250px; font-size: 12px; }
-	.btn-full { font-size: 10px; margin-bottom: 15px; }
-	.btn-nav { font-size: 10px; margin-bottom: 15px; }
-	.animated { padding: 70px 0px 0px 70px; font-size: 25px; max-width: 100px; }
-	.col { justify-content: center; text-align: center; }
-	.col h1 { font-size: 30px; }
-	.btn { padding: 8px; font-size: 12px; }
-	form { justify-content: center; text-align: center; margin: 10px; }
-	.foot-content { display: block; justify-content: center; align-items: center; font-size: 17px; }
-	#copyr { margin-bottom: 0px; text-align: center; }
-	#help { margin-bottom: 0px; text-align: center; }
-
+  .intro-header .main-content-header {
+    margin: 20px;
+    width: 600px;
+    font-size: 16px;
   }
-
-  @media (min-width: 374px) and (max-width: 423px) {
-
-	body { scroll-behavior: smooth; }
-	.main-nav li { display: block; justify-content: center; text-align: center; margin: 20px; }
-	.main-nav a { padding: 10px; }
-	.intro-header .main-content-header { margin: 10px; width: 250px; font-size: 12px; }
-	.btn-full { font-size: 10px; margin-bottom: 15px; margin-right: 90px; }
-	.btn-nav { font-size: 10px; margin-bottom: 15px; margin-right: 90px; }
-	.col { margin: 20px; text-align: center; }
-	.btn { font-size: 13px; padding: 11px; }
-	.foot-content { display: block; justify-content: center; align-items: center; font-size: 17px; }
-	#copyr { margin-bottom: 0px; text-align: center; }
-	#help { margin-bottom: 0px; text-align: center; }
-
+  .btn-full {
+    font-size: 12px;
+    margin-bottom: 15px;
   }
-
-  @media (min-width: 424px) and (max-width: 766px) {
-
-	body { scroll-behavior: smooth; }
-	.main-nav li { display: block; justify-content: center; text-align: center; margin: 20px; }
-	.main-nav a { padding: 10px; }
-	.intro-header .main-content-header { margin: 15px; width: 320px; font-size: 15px; }
-	.btn-full { font-size: 12px; margin-bottom: 15px; margin-right: 90px; }
-	.btn-nav { font-size: 12px; margin-bottom: 15px; margin-right: 90px; }
-	.col { text-align: center; }
-	.card a{
-	  margin:0;
-	  padding:5px;
-	  font-size:10px;
-	}
-	.foot-content { display: block; justify-content: center; align-items: center; font-size: 17px; }
-	#copyr { margin-bottom: 0px; text-align: center; }
-	#help { margin-bottom: 0px; text-align: center; }
-
+  .btn-nav {
+    font-size: 12px;
+    margin-bottom: 15px;
   }
-
-  @media (min-width: 767px) and (max-width: 1023px) {
-
-	body { scroll-behavior: smooth; }
-	.intro-header .main-content-header { margin: 20px; width: 600px; font-size: 16px; }
-	.btn-full { font-size: 12px; margin-bottom: 15px; }
-	.btn-nav { font-size: 12px; margin-bottom: 15px; }
-	.card a{
-	  padding:5px;
-	}
-	.col{
-	  padding:10px;
-	}
-	.foot-content { display: block; justify-content: center; align-items: center; font-size: 20px; }
-	#copyr { margin-bottom: 0px; text-align: center; }
-	#help { margin-bottom: 0px; text-align: center; }
-
+  .card a {
+    padding: 5px;
   }
-  @media (min-width: 1024px) {
-
-	body { scroll-behavior: smooth; }
-	.intro-header .main-content-header { margin: 20px; width: 900px; font-size: 18px; }
-	.foot-content { display: block; justify-content: center; align-items: center; font-size: 25px; }
-	#copyr { margin-bottom: 0px; text-align: center; }
-	.card a{
-	  padding:5px;
-	}
-	#help { margin-bottom: 0px; text-align: center; }
-	.col { margin: 20px; justify-content: center; align-items: center; text-align: center; }
-	.row a { font-size: 25px; }
-	
+  .col {
+    padding: 10px;
   }
-  
+  .foot-content {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+  #copyr {
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  #help {
+    margin-bottom: 0px;
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    scroll-behavior: smooth;
+  }
+  .intro-header .main-content-header {
+    margin: 20px;
+    width: 900px;
+    font-size: 18px;
+  }
+  .foot-content {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
+  #copyr {
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  .card a {
+    padding: 5px;
+  }
+  #help {
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  .col {
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .row a {
+    font-size: 25px;
+  }
+}
